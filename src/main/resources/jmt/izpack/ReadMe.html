@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Java Modelling Tools</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+
+<h1>Installation notes</h1>
+It is recommended to UNINSTALL any previous version of Java Modelling
+Tools present on your PC before installing this new release.
+
+<h2>What's new in version 0.9.2</h2>
+<h3>JMT</h3>
+<ul>
+<li>Project upgraded to Java 1.7</li>
+<li>Upgraded installation to izPack 5.0 to support Windows 8.x</li>
+<li>Default resolution upgraded to 1024x768</li>
+<li>Code improvements: deep refactoring, added maven support, added unit tests</li>
+</ul>
+<h3>JMVA</h3>
+<ul>  
+<li>Users can now select any station in the model as Reference station (the station used for the computation of the system throughput and the system response time).</li>
+<li>Code of MoM, CoMoM, and AMVA solution algorithms now part of the stable code branch</li>
+</ul>
+<h3>JSIM</h3>
+<ul>
+<li>New scheduling algorithms (shortest job first SJF, longest job first LJF, random RAND)</li>
+<li>Class switch, new more powerful implementation, not available in this release for models with fork/join and finite capacity region</li>
+<li>Support for using a large number of classes, queues, and finite capacity regions in a single model</li>
+<li>Several statistics (mean, moments, ...) are generated for the performance indices (response time, number of customers, ...) with the possibility of generating graphics (histogram, density, distribution) on all or a part of the simulated events (results can be saved in CSV files)</li>
+<li>New simulation control parameter, the simulation can be stopped at a user specified simulation time</li>
+</ul>
+
+<h2>Working folder</h2>
+Since <b>JMT 0.9.0 version</b> the new concept of working folder was introduced.
+<br>
+The working folder is created in the home directory of the user to store the examples and for some working
+files of JMT. Also the files created by the Loggers (xxx.csv files) are located in this folder. The location of the
+JMT working folder depends on the operating system of the machine and the user name:
+<ul>
+	<li>on Linux and Unix os in general, the user home is located in path /home/<i>&lt;user name&gt;</i>/JMT</li>
+	<li>on Windows XP the working folder is C:\Documents and Settings\<i>&lt;user name&gt;</i>\JMT</li>
+	<li>on Windows Vista, Windows 7 and later the folder is C:\Users\<i>&lt;user name&gt;</i>\JMT</li>
+	<li>on Mac OS X the folder is /Users/<i>&lt;user name&gt;</i>/JMT</li>
+</ul>
+In previous JMT versions, the default working folder was the JMT installation path. 
+If you have stored some JMT models there, we suggest you to move them in the new working folder.
+
+<h2>Be updated</h2>
+New JMT versions will always be available, for free, at http://jmt.sourceforge.net
+</body>
+</html>
